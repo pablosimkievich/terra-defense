@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', monospace; /* Tipografía retro */
+    color: #FF0000; /* Texto rojo */
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF0000;
+    font-size: 24px;
+    z-index: 1000;
+    text-shadow: 0 0 10px #FF0000;
+}
+
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    cursor: pointer;
+    text-shadow: 0 0 5px #FF0000;
+    transition: all 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #FF0000;
+    color: #000;
+    box-shadow: 0 0 20px #FF0000;
+}
+
+.game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    background-color: #000;
+    border: 2px solid #FF0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    cursor: crosshair;
+}
+
+.hud {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #FF0000;
+    font-size: 20px;
+    z-index: 1;
+    text-shadow: 0 0 5px #FF0000;
+}
+
+.score, .lives {
+    margin: 10px 0;
+}
+
+.game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #FF0000;
+    z-index: 2;
+    border: 2px solid #FF0000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    user-select: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    cursor: pointer;
+    text-shadow: 0 0 5px #FF0000;
+    transition: all 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #FF0000;
+    color: #000;
+    box-shadow: 0 0 20px #FF0000;
+}

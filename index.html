@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Defense</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading" class="loading-screen">
+        <p>CARGANDO RECURSOS...</p>
+    </div>
+    
+    <div class="game-container hidden" id="gameContainer">
+        <div class="hud">
+            <div class="score">PUNTUACIÓN: <span id="score">0</span></div>
+            <div class="lives">VIDAS: <span id="lives">3</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    
+    <div id="gameOver" class="game-over hidden">
+        <h1>¡JUEGO TERMINADO!</h1>
+        <p>Puntuación final: <span id="finalScore">0</span></p>
+        <button id="restartButton">JUGAR DE NUEVO</button>
+    </div>
+    
+        <audio id="shootSound" src="https://assets.mixkit.co/active_storage/sfx/2771/2771-preview.mp3" preload="auto"></audio>
+    <audio id="explosionSound" src="https://assets.mixkit.co/active_storage/sfx/878/878-preview.mp3" preload="auto"></audio>
+    <audio id="gameOverSound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3" preload="auto"></audio>
+    <audio id="backgroundSound" src="https://assets.mixkit.co/active_storage/sfx/123/123-preview.mp3" preload="auto" loop></audio>
+    
+    <script src="game.js"></script>
+</body>
+</html>
