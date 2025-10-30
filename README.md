@@ -1,6 +1,6 @@
 # 🚀 Terra Defense
 
-<img src="./terra-defense.png">
+<img src="./terra-defense.png" />
 
 
 **Terra Defense** es un juego arcade de estilo **retro y wireframe** (contornos) desarrollado en HTML5 Canvas, CSS y JavaScript puro. El objetivo es defender la Tierra (situada en la parte inferior de la pantalla) de una lluvia interminable de asteroides poligonales.
